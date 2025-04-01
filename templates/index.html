@@ -1,0 +1,25 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Weather App</title>
+    
+    <!-- Correct CSS Link -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Simple Weather App</h1>
+        <div class="search-box">
+            <input type="text" id="city" placeholder="Search for a city">
+            <button onclick="getWeather()" id="search-btn">Submit</button>
+        </div>
+        <div class="weather-info" id="weather-info">
+            <!-- Weather details will be displayed here -->
+        </div>
+    </div>
+
+    <!-- Correct JavaScript Link -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
